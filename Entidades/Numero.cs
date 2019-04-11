@@ -8,7 +8,7 @@ namespace Entidades
 {
     public class Numero
     {
-        double numero;
+        private double numero;
 
         double ValidarNumero(string strNumero)
         {
@@ -22,7 +22,8 @@ namespace Entidades
             numero = ValidarNumero(strNumero);
             return numero == 0 ? "0" : strNumero;
         }
-        public string BinarioDecimal(string binario)
+        //
+        public static string BinarioDecimal(string binario)
         {
             string numeroDecimal = "";
             double numeroRet = 0;
@@ -33,13 +34,13 @@ namespace Entidades
             numeroDecimal += numeroRet;
             return numeroDecimal;
         }
-        public string DecimalBinario(string numero)
+        public static string DecimalBinario(string numero)
         {
             double numeroDecimal;
             return double.TryParse(numero, out numeroDecimal) ? DecimalBinario(numeroDecimal) : "Valor invalido";
 
         }
-        public string DecimalBinario(double numero)
+        public static string DecimalBinario(double numero)
         {
             string numeroBinario = "";
             while (numero / 2 < 0)

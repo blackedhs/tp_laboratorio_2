@@ -45,16 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MiCalculadora.cs">
+    <Compile Include="FormCalculadora.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MiCalculadora.Designer.cs">
-      <DependentUpon>MiCalculadora.cs</DependentUpon>
+    <Compile Include="FormCalculadora.Designer.cs">
+      <DependentUpon>FormCalculadora.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCalculadora.cs" />
+    <Compile Include="FormMiCalculadora.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MiCalculadora.resx">
-      <DependentUpon>MiCalculadora.cs</DependentUpon>
+    <EmbeddedResource Include="FormCalculadora.resx">
+      <DependentUpon>FormCalculadora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
