@@ -27,9 +27,14 @@ namespace Entidades
         {
             string numeroDecimal = "";
             double numeroRet = 0;
-            for (int i = 0, j = binario.Length; i < binario.Length; i++, j--)
+            for (int i = 0; i < binario.Length; i++)
             {
-                numeroRet = numeroRet + (binario[j] * (Math.Pow(2, i)));
+                if (binario[i] != '1' && binario[i] != '0')
+                    return "Valor invalido";
+            }
+            for (int i = 1; i <= binario.Length; i++)
+            {
+                numeroRet += double.Parse(binario[i - 1].ToString()) * (Math.Pow(2, binario.Length - i));
             }
             numeroDecimal += numeroRet;
             return numeroDecimal;
@@ -37,15 +42,20 @@ namespace Entidades
         public static string DecimalBinario(string numero)
         {
             double numeroDecimal;
+            for (int i = 0; i < numero.Length; i++)
+            {
+                if (numero[i] < '0' || numero[i] > '9')
+                    return "Valor invalido";
+            }
             return double.TryParse(numero, out numeroDecimal) ? DecimalBinario(numeroDecimal) : "Valor invalido";
 
         }
         public static string DecimalBinario(double numero)
         {
             string numeroBinario = "";
-            while (numero / 2 < 0)
+            while ((int)numero > 0)
             {
-                numeroBinario = (numero % 2) + numeroBinario;
+                numeroBinario = ((int)numero % 2).ToString() + numeroBinario;
                 numero = numero / 2;
             }
             return numeroBinario;

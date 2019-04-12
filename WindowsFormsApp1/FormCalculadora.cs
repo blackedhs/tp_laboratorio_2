@@ -55,7 +55,7 @@ namespace WindowsFormsApp1
         private void btnConverDecimal_Click(object sender, EventArgs e)
         {
             string resultado = lblResultado.Text;
-            resultado =Numero.DecimalBinario(resultado);
+            resultado =Numero.BinarioDecimal(resultado);
             if (resultado == "Valor invalido")
                 MessageBox.Show("Valor Invalido", "Error", MessageBoxButtons.OK);
             else
