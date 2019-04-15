@@ -24,3 +24,16 @@ C:\Users\PC\Documents\Programacion\Tp labo 2\WindowsFormsApp1\obj\Debug\MiCalcul
 C:\Users\PC\Documents\Programacion\Tp labo 2\WindowsFormsApp1\obj\Debug\MiCalculadora.csproj.CopyComplete
 C:\Users\PC\Documents\Programacion\Tp labo 2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\PC\Documents\Programacion\Tp labo 2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\Mis doc\Programacion\Tp labo 2\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Mis doc\Programacion\Tp labo 2\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Mis doc\Programacion\Tp labo 2\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Mis doc\Programacion\Tp labo 2\WindowsFormsApp1\bin\Debug\Entidades.dll
+D:\Mis doc\Programacion\Tp labo 2\WindowsFormsApp1\bin\Debug\Entidades.pdb
+D:\Mis doc\Programacion\Tp labo 2\WindowsFormsApp1\obj\Debug\MiCalculadora.csprojAssemblyReference.cache
+D:\Mis doc\Programacion\Tp labo 2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormCalculadora.resources
+D:\Mis doc\Programacion\Tp labo 2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Mis doc\Programacion\Tp labo 2\WindowsFormsApp1\obj\Debug\MiCalculadora.csproj.GenerateResource.cache
+D:\Mis doc\Programacion\Tp labo 2\WindowsFormsApp1\obj\Debug\MiCalculadora.csproj.CoreCompileInputs.cache
+D:\Mis doc\Programacion\Tp labo 2\WindowsFormsApp1\obj\Debug\MiCalculadora.csproj.CopyComplete
+D:\Mis doc\Programacion\Tp labo 2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Mis doc\Programacion\Tp labo 2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

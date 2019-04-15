@@ -34,12 +34,7 @@ namespace WindowsFormsApp1
         /// <param name="e"></param>
         private void btnConverBinario_Click(object sender, EventArgs e)
         {
-            string resultado = lblResultado.Text;
-            resultado = Numero.DecimalBinario(resultado);
-            if (resultado == "Valor invalido")
-                MessageBox.Show("Valor Invalido","Error",MessageBoxButtons.OK);
-            else
-                lblResultado.Text = resultado;
+            lblResultado.Text = Numero.DecimalBinario(lblResultado.Text);
         }
         /// <summary>
         /// Realiza la operacion deseada
@@ -61,7 +56,7 @@ namespace WindowsFormsApp1
         /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
-            lblResultado.Text =""+ Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text);
+            lblResultado.Text =Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text).ToString();
         }
         /// <summary>
         /// limpia los valores de todos los operandos 1
@@ -83,12 +78,7 @@ namespace WindowsFormsApp1
         /// <param name="e"></param>
         private void btnConverDecimal_Click(object sender, EventArgs e)
         {
-            string resultado = lblResultado.Text;
-            resultado =Numero.BinarioDecimal(resultado);
-            if (resultado == "Valor invalido")
-                MessageBox.Show("Valor Invalido", "Error", MessageBoxButtons.OK);
-            else
-                lblResultado.Text = resultado;
+            lblResultado.Text = Numero.BinarioDecimal(lblResultado.Text);            
         }
     }
 }

@@ -10,3 +10,9 @@ C:\Users\Eduardo\Desktop\Fede\tp_laboratorio_2\Entidades\obj\Debug\Entidades.csp
 C:\Users\Eduardo\Desktop\Fede\tp_laboratorio_2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Eduardo\Desktop\Fede\tp_laboratorio_2\Entidades\obj\Debug\Entidades.dll
 C:\Users\Eduardo\Desktop\Fede\tp_laboratorio_2\Entidades\obj\Debug\Entidades.pdb
+D:\Mis doc\Programacion\Tp labo 2\Entidades\bin\Debug\Entidades.dll
+D:\Mis doc\Programacion\Tp labo 2\Entidades\bin\Debug\Entidades.pdb
+D:\Mis doc\Programacion\Tp labo 2\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+D:\Mis doc\Programacion\Tp labo 2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\Mis doc\Programacion\Tp labo 2\Entidades\obj\Debug\Entidades.dll
+D:\Mis doc\Programacion\Tp labo 2\Entidades\obj\Debug\Entidades.pdb

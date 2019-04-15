@@ -24,7 +24,7 @@ namespace Entidades
                 case "-":
                     return num1 - num2;
                 case "/":
-                    return num1 / num2;
+                    return (num1 / num2).ToString() == (0.0/0).ToString() ? double.MinValue : num1 / num2;
                 case "*":
                     return num1 * num2;
                 default:
