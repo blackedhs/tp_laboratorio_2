@@ -9,40 +9,45 @@ namespace Entidades_2018
     /// <summary>
     /// La clase Producto no deberá permitir que se instancien elementos de este tipo.
     /// </summary>
-    public sealed class Producto
+    public abstract class Producto
     {
-        enum EMarca
+        public enum EMarca
         {
             Serenisima, Campagnola, Arcor, Ilolay, Sancor, Pepsico
         }
-        EMarca marca;
-        string codigoDeBarras;
-        ConsoleColor colorPrimarioEmpaque;
+        private EMarca marca;
+        private string codigoDeBarras;
+        private ConsoleColor colorPrimarioEmpaque;
+
+        public Producto(string codigo,EMarca marca,ConsoleColor color)
+        {
+            this.codigoDeBarras = codigo;
+            this.colorPrimarioEmpaque = color;
+            this.marca = marca;
+        }
 
         /// <summary>
         /// ReadOnly: Retornará la cantidad de ruedas del vehículo
         /// </summary>
-        abstract short CantidadCalorias { get; set; }
+        public abstract short CantidadCalorias { get; }
 
         /// <summary>
         /// Publica todos los datos del Producto.
         /// </summary>
         /// <returns></returns>
-        sealed string Mostrar()
-        {
-            return this;
-        }
-
-        private static explicit operator string(Producto p)
+        public virtual string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-
-            sb.AppendLine("CODIGO DE BARRAS: {0}\r\n", p.codigoDeBarras);
-            sb.AppendLine("MARCA          : {0}\r\n", p.marca.ToString());
-            sb.AppendLine("COLOR EMPAQUE  : {0}\r\n", p.colorPrimarioEmpaque.ToString());
+            sb.AppendLine("CODIGO DE BARRAS: " + this.codigoDeBarras);
+            sb.AppendLine("MARCA           : " + this.marca);
+            sb.AppendLine("COLOR EMPAQUE   : " + this.colorPrimarioEmpaque);
             sb.AppendLine("---------------------");
+            return sb.ToString();
+        }
 
-            return sb;
+        public static explicit operator string(Producto p)
+        {                     
+            return p.Mostrar();
         }
 
         /// <summary>
@@ -63,7 +68,7 @@ namespace Entidades_2018
         /// <returns></returns>
         public static bool operator !=(Producto v1, Producto v2)
         {
-            return (v1.codigoDeBarras == v2.codigoDeBarras);
+            return !(v1==v2);
         }
     }
 }

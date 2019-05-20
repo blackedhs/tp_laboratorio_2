@@ -18,3 +18,13 @@ D:\Federico\VB .Net\Visual C#\utn\TPs\2018\TP-02\TP-02\bin\Debug\TP-02.exe.confi
 D:\Federico\VB .Net\Visual C#\utn\TPs\2018\TP-02\TP-02\obj\Debug\TP-02.exe
 D:\Federico\VB .Net\Visual C#\utn\TPs\2018\TP-02\TP-02\obj\Debug\TP-02.pdb
 D:\Federico\VB .Net\Visual C#\utn\TPs\2018\TP-02\TP-02\obj\Debug\TP-02.csprojResolveAssemblyReference.cache
+P:\Programacion\Tp labo 2\Tp2\TP-02\TP-02\obj\Debug\TP-02.csprojAssemblyReference.cache
+P:\Programacion\Tp labo 2\Tp2\TP-02\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
+P:\Programacion\Tp labo 2\Tp2\TP-02\TP-02\obj\Debug\TP-02.exe
+P:\Programacion\Tp labo 2\Tp2\TP-02\TP-02\bin\Debug\TP-02.exe.config
+P:\Programacion\Tp labo 2\Tp2\TP-02\TP-02\bin\Debug\TP-02.exe
+P:\Programacion\Tp labo 2\Tp2\TP-02\TP-02\bin\Debug\TP-02.pdb
+P:\Programacion\Tp labo 2\Tp2\TP-02\TP-02\bin\Debug\Entidades.dll
+P:\Programacion\Tp labo 2\Tp2\TP-02\TP-02\bin\Debug\Entidades.pdb
+P:\Programacion\Tp labo 2\Tp2\TP-02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
+P:\Programacion\Tp labo 2\Tp2\TP-02\TP-02\obj\Debug\TP-02.pdb
