@@ -6,3 +6,4 @@ P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Archivos\obj\Debug\Archivos.cs
 P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Archivos\obj\Debug\Archivos.csproj.CopyComplete
 P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Archivos\obj\Debug\Archivos.dll
 P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Archivos\obj\Debug\Archivos.pdb
+P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache

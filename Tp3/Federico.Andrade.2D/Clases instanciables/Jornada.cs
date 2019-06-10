@@ -45,7 +45,8 @@ namespace ClasesInstanciables
         {
             Texto txt = new Texto();
             string dato;
-            txt.Leer("./Jornada.txt", out dato);
+            string path = String.Format("{0}\\Jornada.txt", Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
+            txt.Leer(path, out dato);
             return dato;
         }
         public static bool operator ==(Jornada j, Alumno a)
@@ -70,20 +71,22 @@ namespace ClasesInstanciables
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Clase: "+this.clase);
-            sb.AppendLine("Profesor: "+this.instructor);
-            sb.AppendLine("Alumnos: ");
+            sb.AppendLine("CLASE DE : "+this.clase);
+            sb.AppendLine("PROFESOR: "+this.instructor.ToString());
+            sb.AppendLine("ALUMNOS: ");
             foreach (Alumno alumno in this.alumnos)
             {
-                sb.Append(alumno.ToString());
-            }           
+                sb.AppendLine(alumno.ToString());
+            }
+            sb.AppendLine("<---------------------------------------------------------------------------->");
             return sb.ToString();
         }
         public static bool Guardar(Jornada jornada)
         {
             Texto txt = new Texto();
-            bool ret = false;           
-            txt.Guardar("./Jornada.txt", jornada.ToString());
+            bool ret = false;
+            string path = String.Format("{0}\\Jornada.txt", Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
+            txt.Guardar(path, jornada.ToString());
             ret = true;          
             return ret;
         }

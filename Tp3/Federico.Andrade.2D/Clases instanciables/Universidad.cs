@@ -31,11 +31,11 @@ namespace ClasesInstanciables
         {
             get
             {
-                return this[i];
+                return jornadas[i];
             }
             set
             {
-                this[i] = value;
+                jornadas[i] = value;
             }
         }
         public List<Jornada> Jornadas
@@ -52,15 +52,16 @@ namespace ClasesInstanciables
         {
             Xml<Universidad> xml = new Xml<Universidad>();
             Universidad g = new Universidad();
-            xml.Leer(".",out g);
+            string path = String.Format("{0}\\Universidad.xml", Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
+            xml.Leer(path, out g);
             return g;
         }
         public static bool Guardar(Universidad uni)
         {
             Xml<Universidad> xml = new Xml<Universidad>();
             bool ret = false;
-            xml.Guardar(".", uni.ToString());
-            ret = true;
+            string path = String.Format("{0}\\Universidad.xml",Environment.GetFolderPath(Environment.SpecialFolder.Desktop)) ;
+            ret = xml.Guardar(path, uni);
             return ret;
         }
         public static bool operator !=(Universidad g, Alumno a)
@@ -112,8 +113,9 @@ namespace ClasesInstanciables
             if (g != a)
             {
                 g.alumnos.Add(a);
+                return g;
             }
-            return g;
+            throw new AlumnoRepetidoException();
         }
         public static Universidad operator +(Universidad g, Profesor i)
         {
@@ -154,18 +156,8 @@ namespace ClasesInstanciables
             sb.AppendLine("JORNADAS: ");            
             foreach (Jornada jornada in uni.Jornadas)
             {
-                sb.Append(jornada.ToString());
-            }
-            sb.AppendLine("PROFESORES: ");
-            foreach (Profesor profesor in uni.Instructores)
-            {
-                sb.Append(profesor.ToString());
-            }
-            sb.AppendLine("ALUMNOS: ");
-            foreach (Alumno alumno in uni.Alumnos)
-            {
-                sb.Append(alumno.ToString());
-            }
+                sb.AppendLine(jornada.ToString());
+            }            
             return sb.ToString();
         }
 

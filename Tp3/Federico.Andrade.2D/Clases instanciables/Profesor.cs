@@ -35,8 +35,8 @@ namespace ClasesInstanciables
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append(base.ToString());
-            sb.Append(this.ToString());
+            sb.Append(base.MostrarDatos());
+            sb.Append(this.ParticiparEnClase());
             return sb.ToString();
         }
         public static bool operator ==(Profesor i, Universidad.EClases clase)
@@ -54,8 +54,7 @@ namespace ClasesInstanciables
         }        
         static Profesor()
         {
-            random = new Random(1654661);
-            
+            random = new Random();            
         }
         private Profesor()
         {
@@ -68,17 +67,19 @@ namespace ClasesInstanciables
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Clases del dia ");
-            foreach (Universidad.EClases clase in this.clasesDelDia)
-            {
-                sb.AppendLine(clase.ToString());
-            }
+            sb.AppendLine(this.MostrarDatos());            
             return sb.ToString();
         }
 
         protected override string ParticiparEnClase()
         {
-            return "";
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("CLASES DEL DIA: ");
+            foreach (Universidad.EClases clase in this.clasesDelDia)
+            {
+                sb.AppendLine(clase.ToString());
+            }
+            return sb.ToString();
         }
     }
 }

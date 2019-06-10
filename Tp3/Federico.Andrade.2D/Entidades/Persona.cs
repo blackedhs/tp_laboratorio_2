@@ -103,7 +103,7 @@ namespace EntidadesAbstractas
                 || Nacionalidad == ENacionalidad.Extranjero && dato > 90000000 && dato < 99999999)
                 return 1;
             else
-                throw new NacionalidadInvalidaException("Nacionalidad invalida");
+                throw new NacionalidadInvalidaException("La Nacionalidad no se condice con el numero de DNI");
         }
         private int ValidarNombreApellido(string dato)
         {
