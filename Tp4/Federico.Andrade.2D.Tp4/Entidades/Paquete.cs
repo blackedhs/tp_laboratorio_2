@@ -64,7 +64,7 @@ namespace Entidades
                 Thread.Sleep(4000);
 
             }
-            try
+          /*try
             {
                 PaqueteDAO sql = new PaqueteDAO();
                 sql.Insetar(this);
@@ -72,7 +72,7 @@ namespace Entidades
             catch(Exception e)
             {
                 throw e;
-            }
+            }*/
         }
         /// <summary>
         /// Dos paquetes serán iguales siempre y cuando su Tracking ID sea el mismo
