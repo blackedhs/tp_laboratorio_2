@@ -8,6 +8,7 @@ namespace Excepciones
 {
     public class ArchivosException: Exception
     {
+		///Excepcion problemas con archivos
         public ArchivosException(Exception innerException):base("Error,Problema al prosesar un archivo",innerException)
         {            
         }

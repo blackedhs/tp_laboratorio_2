@@ -14,7 +14,8 @@ namespace ClasesInstanciables
         private List<Alumno> alumnos;
         private Universidad.EClases clase;
         private Profesor instructor;
-
+		/// <summary>
+        /// propiedades
         public Profesor Instructor
         {
             get { return instructor; }
@@ -32,15 +33,24 @@ namespace ClasesInstanciables
             get { return alumnos; }
             set { alumnos = value; }
         }
+		/// <summary>
+        /// constructor sin params
+        /// </summary>
         public Jornada()
         {
             alumnos = new List<Alumno>();
         }
+		/// <summary>
+        /// constructor de instancia
+        /// </summary>
         public Jornada(Universidad.EClases clase, Profesor instructor):this()
         {
             this.clase = clase;
             this.instructor = instructor;
         }
+		/// <summary>
+        /// lee los datos de un archivo y los devuelve en un string
+        /// </summary>
         public static string Leer()
         {
             Texto txt = new Texto();
@@ -49,6 +59,9 @@ namespace ClasesInstanciables
             txt.Leer(path, out dato);
             return dato;
         }
+		/// <summary>
+        /// una jornada es igual a un alumno cuando el alumno esta en la lista de alumnos de jornada
+        /// </summary>
         public static bool operator ==(Jornada j, Alumno a)
         {
             foreach (Alumno alumno in j.alumnos)
@@ -58,16 +71,25 @@ namespace ClasesInstanciables
             }
             return false;
         }
+		/// <summary>
+        /// una jornada es distinta a un alumno cuando el alumno no esta en la lista de alumnos de jornada
+        /// </summary>
         public static bool operator !=(Jornada j, Alumno a)
         {
             return !(j == a);
         }
+		/// <summary>
+        /// agrega un alumno a una jornada si no esta en la lista
+        /// </summary>
         public static Jornada operator +(Jornada j, Alumno a)
         {
             if (j != a)
                 j.alumnos.Add(a);
             return j;
         }
+		/// <summary>
+        /// espone los datos de la clase jornada y su lista de alumnos
+		/// <summary>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -81,6 +103,9 @@ namespace ClasesInstanciables
             sb.AppendLine("<---------------------------------------------------------------------------->");
             return sb.ToString();
         }
+		/// <summary>
+        /// guarda los datos de la jornada en un archivo de texto
+		/// <summary>
         public static bool Guardar(Jornada jornada)
         {
             Texto txt = new Texto();

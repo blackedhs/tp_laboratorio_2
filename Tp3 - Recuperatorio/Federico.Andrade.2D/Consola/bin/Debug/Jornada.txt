@@ -1,0 +1,7 @@
+Clase: Programacion
+Profesor: ClasesInstanciables.Profesor
+Alumnos: 
+TOMA CLASE DE Programacion
+Estado de cuenta : Becado
+TOMA CLASE DE Programacion
+Estado de cuenta : AlDia

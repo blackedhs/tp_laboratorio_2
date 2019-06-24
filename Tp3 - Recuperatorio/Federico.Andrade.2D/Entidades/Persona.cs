@@ -19,7 +19,9 @@ namespace EntidadesAbstractas
         private int dni;
         private ENacionalidad nacionalidad;
         private string nombre;
-
+		/// <summary>
+        /// propiedades de persona
+        /// </summary>
         public string Nombre
         {
             get { return nombre; }
@@ -69,23 +71,38 @@ namespace EntidadesAbstractas
                 }
             }
         }
+		/// <summary>
+        /// constructor sin parametros
+        /// </summary>
         public Persona()
         {
         }
+		/// <summary>
+        /// constructor base de persona
+        /// </summary>
         public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad) : this(nombre, apellido, nacionalidad)
         {
             DNI = dni;
         }
+		/// <summary>
+        /// constructor base de persona
+        /// </summary>
         public Persona(string nombre, string apellido, ENacionalidad nacionalidad)
         {
             this.nombre = nombre;
             this.apellido = apellido;
             this.nacionalidad = nacionalidad;
         }
+		/// <summary>
+        /// constructor base de persona
+        /// </summary>
         public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad):this(nombre,apellido,nacionalidad)
         {
             StringToDNI = dni;
         }
+		/// <summary>
+        /// muestra los datos de persona
+        /// </summary>
         public new virtual string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -95,6 +112,9 @@ namespace EntidadesAbstractas
             sb.AppendLine("Nacionalidad: " + this.nacionalidad);
             return sb.ToString();
         }
+		/// <summary>
+        /// valida si el dni esta dentro de los parametros segun nacionalidad
+        /// </summary>
         private int ValidarDni(ENacionalidad nacionalidad, int dato)
         {
             if (dato > 99999999)
@@ -105,6 +125,9 @@ namespace EntidadesAbstractas
             else
                 throw new NacionalidadInvalidaException("La Nacionalidad no se condice con el numero de DNI");
         }
+		/// <summary>
+        /// valida que los datos ingresados sean correctos para un nombre o apellido
+        /// </summary>
         private int ValidarNombreApellido(string dato)
         {
             Regex regex = new Regex(@"[a-zA-Z]*");
@@ -117,6 +140,9 @@ namespace EntidadesAbstractas
                 return 0;
 
         }
+		/// <summary>
+        /// valida si el dni esta dentro de los parametros segun nacionalidad
+        /// </summary>
         private int ValidarDni(ENacionalidad nacionalidad, string dato)
         {
             int dni;

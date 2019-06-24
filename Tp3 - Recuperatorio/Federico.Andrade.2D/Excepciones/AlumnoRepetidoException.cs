@@ -8,6 +8,7 @@ namespace Excepciones
 {
     public class AlumnoRepetidoException:Exception
     {
+		///Excepcion alumno repetido
         public AlumnoRepetidoException():base("Alumno repetido")
         {
         }
