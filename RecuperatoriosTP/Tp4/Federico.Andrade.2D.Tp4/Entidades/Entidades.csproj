@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Correo.cs" />
+    <Compile Include="DelegadoException.cs" />
     <Compile Include="IMostrar.cs" />
     <Compile Include="MiMetodoDeExtencion.cs" />
     <Compile Include="Paquete.cs" />

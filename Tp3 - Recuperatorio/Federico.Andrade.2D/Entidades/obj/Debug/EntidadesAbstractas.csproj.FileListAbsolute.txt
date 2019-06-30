@@ -1,9 +1,0 @@
-P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Entidades\bin\Debug\EntidadesAbstractas.dll
-P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Entidades\bin\Debug\EntidadesAbstractas.pdb
-P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Entidades\bin\Debug\Excepciones.dll
-P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Entidades\bin\Debug\Excepciones.pdb
-P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Entidades\obj\Debug\EntidadesAbstractas.csprojAssemblyReference.cache
-P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Entidades\obj\Debug\EntidadesAbstractas.csproj.CoreCompileInputs.cache
-P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Entidades\obj\Debug\EntidadesAbstractas.csproj.CopyComplete
-P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Entidades\obj\Debug\EntidadesAbstractas.dll
-P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Entidades\obj\Debug\EntidadesAbstractas.pdb

@@ -1,6 +1,0 @@
-P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Excepciones\bin\Debug\Excepciones.dll
-P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Excepciones\bin\Debug\Excepciones.pdb
-P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Excepciones\obj\Debug\Excepciones.csprojAssemblyReference.cache
-P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
-P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Excepciones\obj\Debug\Excepciones.dll
-P:\Programacion\Tp labo 2\Tp3\Federico.Andrade.2D\Excepciones\obj\Debug\Excepciones.pdb
